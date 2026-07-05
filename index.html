@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounty Cup — $BountyCup</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Barlow:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="pitch-lines" aria-hidden="true"></div>
+    <div class="gold-dust" aria-hidden="true"></div>
+    <div class="stadium-beams" aria-hidden="true">
+      <div class="beam beam-1"></div>
+      <div class="beam beam-2"></div>
+      <div class="beam beam-3"></div>
+    </div>
+    <div class="spotlight spotlight-left" aria-hidden="true"></div>
+    <div class="spotlight spotlight-right" aria-hidden="true"></div>
+
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <img src="logo.png" alt="Bounty Cup logo" />
+          <span>Bounty Cup</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#howtobuy">How to Buy</a></li>
+          <li><a href="#chart">Chart</a></li>
+          <li><a href="#joinus">Join Us</a></li>
+          <li>
+            <a
+              href="#"
+              id="navBuyBtn"
+              class="btn btn-gold btn-sm"
+              target="_blank"
+              rel="noopener"
+              >Buy $BountyCup</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+ 
+    <!-- HERO -->
+    <section class="section hero" id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-stripe" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">Official Token — Live on pump.fun</span>
+          </p>
+          <h1 class="hero-title">
+            <span class="gold-text">Bounty Cup</span>
+            <span class="hero-symbol">$BountyCup</span>
+          </h1>
+          <div class="hero-actions">
+            <a
+              href="#"
+              id="heroBuyBtn"
+              class="btn btn-gold btn-lg shimmer"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>Buy on PumpSwap</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="#chart" class="btn btn-outline btn-lg">View Chart</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-label">Symbol</span>
+              <span class="stat-value">$BountyCup</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Chain</span>
+              <span class="stat-value">Solana</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Meta</span>
+              <span class="stat-value">Championship</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="trophy-frame">
+            <div class="trophy-ring ring-1"></div>
+            <div class="trophy-ring ring-2"></div>
+            <div class="trophy-ring ring-3"></div>
+            <div class="logo-portrait">
+              <div class="logo-frame-outer" aria-hidden="true"></div>
+              <div class="logo-frame-border" aria-hidden="true"></div>
+              <div class="logo-frame-shimmer" aria-hidden="true"></div>
+              <span
+                class="logo-corner logo-corner-tl"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="logo-corner logo-corner-tr"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="logo-corner logo-corner-bl"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="logo-corner logo-corner-br"
+                aria-hidden="true"
+              ></span>
+              <img src="logo.png" alt="Bounty Cup Trophy" class="trophy-img" />
+            </div>
+            <div class="trophy-shine"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About</span>
+          <h2 class="section-title gold-text">The Ultimate Championship</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="card-icon">🏆</div>
+            <h3>Epic Bounty Battles</h3>
+            <p>
+              Battle in the biggest bounty competition Solana has ever seen.
+              Creators drop epic tasks, hunters complete them for massive
+              rewards.
+            </p>
+          </div>
+          <div class="about-card reveal delay-1">
+            <div class="card-icon">💰</div>
+            <h3>Climb the Leaderboard</h3>
+            <p>
+              Fight for the legendary Bounty Cup trophy. Complete challenges,
+              earn real-time tips, and compete for the grand prize.
+            </p>
+          </div>
+          <div class="about-card reveal delay-2">
+            <div class="card-icon">🚀</div>
+            <h3>Your Arena</h3>
+            <p>
+              Whether you're a bounty hunter, meme creator, raider, or degen —
+              this is your arena. Rewards, glory, and bags await.
+            </p>
+          </div>
+        </div>
+        <div class="about-description reveal">
+          <p>
+            🏆 <strong>Bounty Cup</strong> – The ultimate bounty championship on
+            pump.fun! Battle in the biggest bounty competition Solana has ever
+            seen. Creators drop epic tasks, hunters complete them for massive
+            rewards, climb the global leaderboard, and fight for the legendary
+            Bounty Cup trophy.
+          </p>
+          <p>
+            Join the cup. Hunt the bounties. Lift the trophy. Rewards, glory,
+            and bags await 🏆💰🚀
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section class="section howtobuy" id="howtobuy">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In</span>
+          <h2 class="section-title gold-text">How to Buy</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3>Get a Solana Wallet</h3>
+              <p>
+                Download Phantom, Solflare, or Backpack. Create your wallet and
+                fund it with SOL from any exchange.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal delay-1">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3>Head to PumpSwap</h3>
+              <p>
+                Click the buy button below to open PumpSwap. Connect your wallet
+                and swap SOL for $BountyCup instantly.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal delay-2">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3>Lift the Trophy</h3>
+              <p>
+                You're in. Complete challenges, earn real-time tips, and compete
+                for the grand prize. Join the cup and lift the trophy 🏆
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="buy-cta reveal">
+          <a
+            href="#"
+            id="buyBtn"
+            class="btn btn-gold btn-xl shimmer pulse-glow"
+            target="_blank"
+            rel="noopener"
+          >
+            Buy $BountyCup on PumpSwap
+          </a>
+          <p class="contract-label">Contract Address</p>
+          <div class="contract-box" id="contractBox">
+            <code id="contractAddress"
+              >TBA</code
+            >
+            <button
+              class="copy-btn"
+              id="copyBtn"
+              aria-label="Copy contract address"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="9" y="9" width="13" height="13" rx="2" />
+                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHART -->
+    <section class="section chart-section" id="chart">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Live Data</span>
+          <h2 class="section-title gold-text">Price Chart</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="chart-wrapper reveal">
+          <div class="chart-frame">
+            <iframe
+              id="dexscreenerEmbed"
+              title="Bounty Cup DexScreener Chart"
+              src=""
+              allow="clipboard-write"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <a
+            href="#"
+            id="chartLink"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener"
+            >Open on DexScreener →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN US -->
+    <section class="section joinus" id="joinus">
+      <div class="joinus-banner-wrap reveal">
+        <img
+          src="banner.png"
+          alt="Bounty Cup — Join the community"
+          class="joinus-banner"
+        />
+        <div class="joinus-banner-overlay"></div>
+      </div>
+      <div class="container joinus-content">
+        <div class="section-header reveal">
+          <span class="section-tag">Community</span>
+          <h2 class="section-title gold-text">Join Us</h2>
+          <div class="title-underline"></div>
+          <p class="joinus-sub">
+            Whether you're a bounty hunter, meme creator, raider, or degen —
+            this is your arena. Join the community and compete for glory.
+          </p>
+        </div>
+        <div class="social-grid reveal">
+          <a
+            href="https://x.com/BountyCupMeme"
+            class="social-card twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </div>
+            <div class="social-info">
+              <span class="social-label">Follow on X</span>
+              <span class="social-handle">@BountyCupMeme</span>
+            </div>
+            <span class="social-arrow">→</span>
+          </a>
+          <a
+            href="https://t.me/BountyCupMeme"
+            class="social-card telegram"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                />
+              </svg>
+            </div>
+            <div class="social-info">
+              <span class="social-label">Join Telegram</span>
+              <span class="social-handle">@BountyCupMeme</span>
+            </div>
+            <span class="social-arrow">→</span>
+          </a>
+          <a
+            href="#"
+            id="joinBuyBtn"
+            class="social-card buy-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="social-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+            </div>
+            <div class="social-info">
+              <span class="social-label">Buy Now</span>
+              <span class="social-handle">PumpSwap</span>
+            </div>
+            <span class="social-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="logo.png" alt="" />
+          <span>Bounty Cup</span>
+        </div>
+        <p class="footer-disclaimer">
+          $BountyCup is a meme coin with no intrinsic value. This is not
+          financial advice. DYOR and only invest what you can afford to lose.
+        </p>
+        <div class="footer-links">
+          <a href="https://x.com/BountyCupMeme" target="_blank" rel="noopener"
+            >X</a
+          >
+          <a href="https://t.me/BountyCupMeme" target="_blank" rel="noopener"
+            >Telegram</a
+          >
+          <a href="#" id="footerBuyBtn" target="_blank" rel="noopener">Buy</a>
+        </div>
+        <p class="footer-copy">© 2026 Bounty Cup. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
