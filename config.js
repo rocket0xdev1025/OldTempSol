@@ -1,5 +1,5 @@
 const BOUNTY_CUP_CONFIG = {
-  contractAddress: "7FxskNY3K5t3uoedZ99D47iDnn9Z1p33d736FaWxpump",
+  contractAddress: "TBA",
   solMint: "So11111111111111111111111111111111111111112",
 };
 
