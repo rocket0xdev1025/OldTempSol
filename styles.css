@@ -1352,9 +1352,37 @@ a {
 }
 
 .card-icon {
-  font-size: 2.4rem;
+  width: 100%;
+  aspect-ratio: 1;
   margin-bottom: 18px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(255, 229, 102, 0.2);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+}
+
+.card-icon-1 {
+  background-image: url("assets/1.png");
+}
+
+.card-icon-2 {
+  background-image: url("assets/2.png");
+}
+
+.card-icon-3 {
+  background-image: url("assets/3.png");
+}
+
+.about-card:hover .card-icon {
+  border-color: rgba(255, 229, 102, 0.45);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.45),
+    0 0 24px rgba(255, 229, 102, 0.12);
 }
 
 .about-card h3 {
